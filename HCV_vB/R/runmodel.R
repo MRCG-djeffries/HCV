@@ -86,44 +86,45 @@ runmodel=function(fitnum){
     I = top/bot;
     
     # incidence function , note put in =51
+    # incidence function for US trend
     if (t>=0 && t<=63){
       scaleI = 1
     }else if (t==64){
-      scaleI = 1.6;
+      scaleI = 1;
     }else if (t==65){
-      scaleI = 1.8;
+      scaleI = 1.8/1.6;
     }else if (t==66){
-      scaleI = 1.9;
+      scaleI = 1.9/1.6;
     }else if (t==67){
-      scaleI = 2.2;
+      scaleI = 2.2/1.6;
     }else if (t==68){
-      scaleI = 2.3;
+      scaleI = 2.3/1.6;
     }else if (t==69){
-      scaleI = 2.3;
+      scaleI = 2.6/1.6;
     }else if (t==70){
-      scaleI = 2.3;
+      scaleI = 2.5/1.6;
     }else if (t==71){
-      scaleI = 2.2;    
+      scaleI = 2.4/1.6;    
     }else if (t==72){
-      scaleI = 2.1;   
+      scaleI = 2.3/1.6;  
     }else if (t==73){
-      scaleI = 2.0; 
+      scaleI = 2.2/1.6;
     }else if (t==74){
-      scaleI = 1.9; 
+      scaleI = 2.1/1.6;
     }else if (t==75){
-      scaleI = 1.8;  
+      scaleI = 2.1/1.6;  
     }else if (t==76){
-      scaleI = 1.7;  
+      scaleI = 2.1/1.6;  
     }else if (t==77){
-      scaleI = 1.6;  
+      scaleI = 2.1/1.6;  
     }else if (t==78){
-      scaleI = 1.5;  
+      scaleI = 2.1/1.6;  
     }else if (t==79){
-      scaleI = 1.4;  
+      scaleI = 2.1/1.6;  
     }else if (t==80){
-      scaleI = 1.3;  
+      scaleI = 2.1/1.6;  
     }else if (t==81){
-      scaleI = 1.2;      
+      scaleI = 2.1/1.6;      
     }else{
       scaleI=1;
     }

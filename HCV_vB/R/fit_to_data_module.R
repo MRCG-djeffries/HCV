@@ -40,7 +40,7 @@ fit_to_data_module <- function(input, output, session) {
   observeEvent(input$model_fit1, {
     output$plot_text <- renderUI({HTML(paste0("Fit for 3 parameters: probability of transmission, 
     F0 to F1 rate for current and former PWIDs.","<br>", 
-    "The fitted rates of F0 to F1 for current and former are 0.077 and 0.078","<br>",
+    "The fitted rates of F0 to F1 for current and former are 0.087 and 0.063","<br>",
     "Compared to the literature estimated rates of 0.106 and 0.116","<br>",
     "Note in the parameter database, there is no value for probability of transmission (estimated as 13.9%)","<br>",
     "GENERALLY AT LEAST ONE PARAMETER IS USED TO CALIBRATE THE MODEL TO KNOWN EPIDEMIC DATA"
@@ -57,11 +57,11 @@ fit_to_data_module <- function(input, output, session) {
   observeEvent(input$model_fit2, {
     output$plot_text <- renderUI({HTML(paste0("Fit for 5 parameters: probability of transmission, 
     F0 to F1 rate for current and former PWIDs and relapse rate, injecting career duration","<br>", 
-    "The fitted rates of F0 to F1 for current and former are 0.104 and 0.078","<br>",
+    "The fitted rates of F0 to F1 for current and former are 0.092 and 0.120","<br>",
     "Compared to the literature estimated rates of 0.106 and 0.116","<br>",
-    "The fitted rates of relapse rate, injecting career duration are 0.105 and 18.39 years","<br>",
+    "The fitted rates of relapse rate, injecting career duration are 0.107 and 14.89 years","<br>",
     "Compared to the literature estimated rates of 0.027 and 17 years","<br>",
-    "Note in the parameter database, there is no value for probability of transmission (estimated as 10.4%)","<br>",
+    "Note in the parameter database, there is no value for probability of transmission (estimated as 10.9%)","<br>",
      "GENERALLY AT LEAST ONE PARAMETER IS USED TO CALIBRATE THE MODEL TO KNOWN EPIDEMIC DATA"
     ))})
     output$plot_model =  renderPlot(runmodel(1))
